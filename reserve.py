@@ -1,6 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 import json
 from time import sleep
@@ -32,7 +30,8 @@ def Login():
     pwd = driver.find_element_by_id("password")
     pwd.send_keys(password)
     driver.find_element_by_xpath("//button[@class='btn-red btn-signin']").click()
-    driver.implicitly_wait(30)
+    sleep(2)
+    driver.implicitly_wait(50)
     driver.find_element_by_xpath(f"//*[text()='{concert}']").click()
     driver.implicitly_wait(30)
 
@@ -90,8 +89,15 @@ def SelectSeat(number=seat):
     driver.find_element_by_id("booknow").click()
     driver.implicitly_wait(30)
 
+def confirm_ticketprotect():
+    driver.find_element_by_xpath("//div[@class='confirm-ticketprotect button']/a[1]").click(30) 
+    driver.implicitly_wait(30)
+
+ 
+
 setUp()
 Login()
 SelectShow()
 SelectZone()
 SelectSeat()
+confirm_ticketprotect()
