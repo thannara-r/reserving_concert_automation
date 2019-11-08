@@ -122,4 +122,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-userdetail.json
