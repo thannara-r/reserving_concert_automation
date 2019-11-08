@@ -32,7 +32,11 @@ def Login():
     driver.find_element_by_xpath("//button[@class='btn-red btn-signin']").click()
     sleep(2)
     driver.implicitly_wait(50)
-    driver.find_element_by_xpath(f"//*[text()='{concert}']").click()
+    cur_url=driver.current_url
+    while cur_url == base_url:
+        driver.find_element_by_partial_link_text(f"{concert}").click()
+        driver.implicitly_wait(30)
+        cur_url=driver.current_url
     driver.implicitly_wait(30)
 
 def SelectShow():
