@@ -1,4 +1,6 @@
 # Reseving Concert Automation
+    Concert from thaiticketmajor
+
 
 ## Installation
 
@@ -17,10 +19,11 @@
         "email":"email@a.com",
         "pwd":"password",
         "concert":"concert's name ex.TRINITY PREMIERE SHOWCASE",
-        "zone":"zone",
+        "zone":"zone Ex.BR",
         "show":"round ex.1,2,3,...",
         "seats":"Number of seatsex.1,2,3"
     }
 ``` 
-
-
+![name](/img/name.png)
+![show](/img/show.png)
+![zone](/img/zone.png)
