@@ -1,5 +1,5 @@
 # Reseving Concert Automation
-Concert from thaiticketmajor
+Concerts from Thaiticketmajor
 
 
 ## Installation
