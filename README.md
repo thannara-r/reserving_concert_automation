@@ -1,5 +1,5 @@
 # Reseving Concert Automation
-    Concert from thaiticketmajor
+    ##### Concert from thaiticketmajor
 
 
 ## Installation
@@ -25,7 +25,7 @@
     
 
 ## User's detail
-    Edit with text editor or code editor ex.Notes, VSCode
+    ##### Edit with text editor or code editor ex.Notes, VSCode
 ```json
     {
         "email":"email@a.com",
@@ -36,11 +36,11 @@
         "seats":"2"
     }
 ``` 
-* Concert's name
+### * Concert's name
 ![name](/img/name.png)
 
-* Round of show
+### * Round of show
 ![show](/img/show.png)
 
-* Zone of seat
+### * Zone of seat
 ![zone](/img/zone.png)
