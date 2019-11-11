@@ -1,16 +1,17 @@
-#Reseving Concert Automation
+# Reseving Concert Automation
 
-##Installation
-*python 3
+## Installation
+
+* python 3
 ```bash
     [python3](https://www.python.org/downloads/)
 ```    
-*Selenium
+* Selenium
 ```bash
     sudo pip install -U selenium
 ``` 
 
-##User's detail
+## User's detail
 ```bash
     {
         "email":"email@a.com",
