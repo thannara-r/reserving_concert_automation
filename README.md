@@ -37,13 +37,13 @@ Edit with text editor or code editor ex.Notes, VSCode
     }
 ``` 
 
-### * Concert's name
+* ### Concert's name
 ![name](/img/name.png)
 
 
-### * Round of show
+* ### Round of show
 ![show](/img/show.png)
 
 
-### * Zone 
+* ### Zone 
 ![zone](/img/zone.png)
