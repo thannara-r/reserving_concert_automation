@@ -42,5 +42,5 @@ Edit with text editor or code editor ex.Notes, VSCode
 ### * Round of show
 ![show](/img/show.png)
 
-### * Zone of seat
+### * Zone 
 ![zone](/img/zone.png)
