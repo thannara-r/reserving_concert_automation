@@ -5,7 +5,7 @@ Concerts from Thaiticketmajor
 ## Installation
 * python 3
 ```bash
-    [python3](https://www.python.org/downloads/)
+    [   download python3 ](https://www.python.org/downloads/)
 ```  
 
 * pip
