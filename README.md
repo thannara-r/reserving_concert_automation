@@ -36,11 +36,14 @@ Edit with text editor or code editor ex.Notes, VSCode
         "seats":"2"
     }
 ``` 
+
 ### * Concert's name
 ![name](/img/name.png)
 
+
 ### * Round of show
 ![show](/img/show.png)
+
 
 ### * Zone 
 ![zone](/img/zone.png)
