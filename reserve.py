@@ -58,13 +58,13 @@ def SelectShow():
     if  selected=="เลือกรอบการแสดง / Select round":
         driver.find_element_by_id("rdId").click()
         driver.implicitly_wait(30)
-        driver.find_element_by_xpath(f"//*[@class='select-date fix-me']/option[{show+1}]").click()
+        driver.find_element_by_xpath(f"//*[@div='select-date fix-me']/option[{show+1}]").click()
         driver.implicitly_wait(30)
 
 
 def SelectZone(zone=zone):    
     global zone_list
-    list_zone=driver.find_elements_by_xpath(f"//*[@class='select-zone']/div[1]/map[1]/area")
+    list_zone=driver.find_elements_by_xpath(f"//*[@name='uMap2Map']/area")
     row=zone_list=len(list_zone)
     index=0
     cur_url=nextUrl=driver.current_url
@@ -75,7 +75,7 @@ def SelectZone(zone=zone):
             index=i
             break
     while cur_url == nextUrl:
-        driver.find_element_by_xpath(f"//*[@class='select-zone']/div[1]/map[1]/area[{index}]").click()
+        driver.find_element_by_xpath(f"//*[@name='uMap2Map']/area[{index}]").click()
         driver.implicitly_wait(30)
         nextUrl=driver.current_url
 
