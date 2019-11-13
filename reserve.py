@@ -44,18 +44,13 @@ def Login():
 
 def SelectShow():
     row=len(driver.find_elements_by_xpath("//div[@class='box-event-list']/div[2]/div"))
+    #select round
+    driver.find_element_by_xpath(f"//div[@class='box-event-list']/div[2]/div[{show}]/div[2]/span[1]/a[1]").click()
     driver.implicitly_wait(30)
-    if show<=row:
-        driver.find_element_by_xpath(f"//div[@class='box-event-list']/div[2]/div[{show}]/div[2]/span[1]/a[1]").click()
-        driver.implicitly_wait(30)
         
-    else:
-        show_new=int(input(f"please input round of show(1-{row}): "))
-        driver.find_element_by_xpath(f"//div[@class='box-event-list']/div[2]/div[{show_new}]/div[2]/span[1]/a[1]").click()
-        driver.implicitly_wait(30)
-        
+
     selected=driver.find_element_by_xpath(f"//*[@id='rdId']/option[1]").text
-    
+    # if after click and round is not selected
     if  selected=="เลือกรอบการแสดง / Select round":
         driver.find_element_by_id("rdId").click()
         driver.implicitly_wait(30)
@@ -110,6 +105,7 @@ def SelectSeat(number=seat):
     if count!=0:
         confirm_ticketprotect()
 
+#if your zone not have any seat.
 def go_to_next_zone():
     global next_zone_index
     while next_zone_index<=zone_list:
@@ -134,8 +130,6 @@ def go_to_next_zone():
 def confirm_ticketprotect():
     driver.find_element_by_partial_link_text("ยืนยันที่นั่ง / Book Now").click()
     driver.implicitly_wait(50)
-    nextUrl=driver.current_url
-
     driver.find_element_by_partial_link_text("Continue").click()
     driver.implicitly_wait(40)
         
