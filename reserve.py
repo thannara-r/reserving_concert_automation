@@ -50,9 +50,10 @@ def SelectShow():
         driver.implicitly_wait(30)
         
     else:
-        show_new=int(input(f"please input round of show({1}-{row}): "))
+        show_new=int(input(f"please input round of show(1-{row}): "))
         driver.find_element_by_xpath(f"//div[@class='box-event-list']/div[2]/div[{show_new}]/div[2]/span[1]/a[1]").click()
         driver.implicitly_wait(30)
+        
     selected=driver.find_element_by_xpath(f"//*[@id='rdId']/option[1]").text
     
     if  selected=="เลือกรอบการแสดง / Select round":
