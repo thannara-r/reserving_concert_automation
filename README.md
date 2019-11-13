@@ -12,7 +12,7 @@ Concerts from Thaiticketmajor
     
 * Selenium
 ```bash
-    sudo pip install -U selenium
+    pip install -U selenium
 ```
 
 ## Usage
